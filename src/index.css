@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import "tailwindcss";
+
+:root{
+  font-family: "Gideon Roman",sans-serif;
+  /* background-color: rgb(14, 0, 13); */
+  color: white;
+}
+
+.stroke-text {
+  -webkit-text-stroke:0.5px rgb(197, 196, 196);
+  color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+* {
+  scrollbar-width: none;
+}

@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import Nav from "./Nav";
+import bg from '../assets/bg1.webp'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,9 +62,17 @@ const Hero1 = () => {
       {/* HERO */}
       <section
         ref={container1}
-        className="h-screen w-full flex px-3 py-2 items-center justify-center relative z-10"
+        
+        className="h-screen hero w-full flex px-3 py-2 items-center justify-center relative z-10"
       >
-        <div className="card w-full h-full bg-[#f7e7ce] text-[#081c18] rounded-3xl shadow-3xl flex flex-col justify-between">
+        <div
+        style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "100vh"
+      }}
+         className="card w-full h-full bg-[#f7e7ce] text-[#f6ef69cb] rounded-3xl shadow-3xl flex flex-col justify-between">
           
           {/* NAV */}
           <div className="flex justify-center items-center w-full text-center pt-4">
@@ -71,16 +80,16 @@ const Hero1 = () => {
           </div>
 
           {/* CENTER CONTENT */}
-          <div className="flex flex-col justify-center items-center grow text-center">
-            <p className=" Name lg:text-3xl">Heyy, I'm</p>
-            <h1 className="text-5xl uppercase lg:text-9xl">Alok Kumar</h1>
-            <h3 className="italic lg:text-4xl">Frontend Developer</h3>
+          <div className="flex flex-col justify-center space-y-2 pt-10 items-center grow text-center">
+            <p className=" text-2xl md:text-2xl lg:text-3xl">Heyy, I'm</p>
+            <h1 className="text-6xl md:text-8xl uppercase font-semibold lg:text-9xl">Alok Kumar</h1>
+            <h3 className="italic  text-2xl md:text-2xl lg:text-4xl">Frontend Developer</h3>
           </div>
 
           {/* BOTTOM BAR */}
           <div className="flex justify-between items-center mb-5 h-16 w-full px-7 rounded-b-3xl">
-            <button className="bg-[#081c18] px-5 py-2 rounded-3xl text-[#f7e7ce]">Contact</button>
-            <button className="bg-[#081c18] px-5 py-2 rounded-3xl text-[#f7e7ce]" >Lets talk</button>
+            <button className="bg-[#081c18] download-button ">Contact</button>
+            <button className="bg-[#081c18] download-button " >Lets talk</button>
           </div>
 
         </div>

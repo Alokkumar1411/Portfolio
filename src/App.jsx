@@ -1,18 +1,12 @@
 import React from 'react'
-import Hero from './components/Hero'
+import Hero1 from './components/Hero1'
+import Projects from './components/Projects'
 
 const App = () => {
   return (
     <>
-    <div>
-      <div className='h-screen w-screen bg-black'>
-
-      </div>
-      <Hero/>
-      <div className='h-screen w-screen bg-black'>
-
-      </div>
-    </div>
+    <Hero1/>
+    <Projects/>
     </>
   )
 }
